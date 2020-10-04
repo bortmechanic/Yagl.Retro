@@ -4,7 +4,7 @@
              x:Class="Yagl.Retro.Designer.MainPage">
     
         <Label x:Name="HelloLabel"
-               Text="Hello World!"
+               Text="Hello!"
                VerticalOptions="Center"
                HorizontalOptions="Center"
                />
