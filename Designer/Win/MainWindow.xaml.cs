@@ -1,13 +1,12 @@
-﻿using System.Windows.Navigation;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Platform.WPF;
 
-namespace Win
+namespace Yagl.Retro.Designer.Win
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : FormsApplicationPage
+    public partial class MainWindow
     {
         public MainWindow()
         {
