@@ -1,13 +1,12 @@
 ﻿using System;
 using Eto.Forms;
-using Eto.Drawing;
 
-namespace App.Desktop
+namespace Yagl.Retro.Designer
 {
-    class Program
+    internal static class Program
     {
         [STAThread]
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             new Application(Eto.Platform.Detect).Run(new MainForm());
         }

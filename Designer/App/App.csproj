@@ -3,7 +3,20 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFrameworks>net472</TargetFrameworks>
-    <RootNamespace>App.Desktop</RootNamespace>
+    <RootNamespace>Yagl.Retro.Designer</RootNamespace>
+    <AssemblyName>Yagl.Retro.Designer</AssemblyName>
+    <LangVersion>8</LangVersion>
+    <IsPackable>false</IsPackable>
+    <PackageVersion>0.1.0-alpha</PackageVersion>
+    <Title>YAGL Retro Designer</Title>
+    <Authors>Pavel Melnikov</Authors>
+    <Copyright>Copyright (c) Pavel Melnikov</Copyright>
+    <PackageProjectUrl>https://github.com/bortmechanic/Yagl.Retro</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/bortmechanic/Yagl.Retro</RepositoryUrl>
+    <PackageTags>YAGL</PackageTags>
+    <Company>Pavel Melnikov</Company>
+    <Product>YAGL Retro Designer</Product>
+    <AssemblyVersion>0.1.0-alpha</AssemblyVersion>
   </PropertyGroup>
 	
   <ItemGroup>

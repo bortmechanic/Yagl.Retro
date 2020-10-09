@@ -1,29 +1,30 @@
-using System;
-using Eto.Forms;
 using Eto.Drawing;
+using Eto.Forms;
 
-namespace App
+namespace Yagl.Retro.Designer
 {
-    public partial class MainForm : Form
+    public sealed class MainForm : Form
     {
         public MainForm()
         {
-            Title = "My Eto Form";
-            ClientSize = new Size(400, 350);
+            Title = "YAGL Retro Designer";
+            ClientSize = new Size(800, 600);
 
             Content = new StackLayout
             {
                 Padding = 10,
+                HorizontalContentAlignment = HorizontalAlignment.Stretch,
+                VerticalContentAlignment = VerticalAlignment.Stretch,
+                
                 Items =
                 {
-                    "Hello World!",
-					// add more controls here
+                    new Label { Text = "Hello World!", 
+                        TextAlignment = TextAlignment.Center,
+                        VerticalAlignment = VerticalAlignment.Center
+                    }
+                    // add more controls here
 				}
             };
-
-            // create a few commands that can be used for the menu and toolbar
-            var clickMe = new Command { MenuText = "Click Me!", ToolBarText = "Click Me!" };
-            clickMe.Executed += (sender, e) => MessageBox.Show(this, "I was clicked!");
 
             var quitCommand = new Command { MenuText = "Quit", Shortcut = Application.Instance.CommonModifier | Keys.Q };
             quitCommand.Executed += (sender, e) => Application.Instance.Quit();
@@ -36,22 +37,20 @@ namespace App
             {
                 Items =
                 {
-					// File submenu
-					new ButtonMenuItem { Text = "&File", Items = { clickMe } },
-					// new ButtonMenuItem { Text = "&Edit", Items = { /* commands/items */ } },
-					// new ButtonMenuItem { Text = "&View", Items = { /* commands/items */ } },
-				},
+                    // File submenu
+                    new ButtonMenuItem {Text = "&File"}
+                },
                 ApplicationItems =
                 {
-					// application (OS X) or file menu (others)
-					new ButtonMenuItem { Text = "&Preferences..." },
+                    // application (OS X) or file menu (others)
+                    new ButtonMenuItem {Text = "&Preferences..."},
                 },
                 QuitItem = quitCommand,
                 AboutItem = aboutCommand
             };
 
             // create toolbar			
-            ToolBar = new ToolBar { Items = { clickMe } };
+            //ToolBar = new ToolBar { Items = { } };
         }
     }
 }
