@@ -3,17 +3,17 @@
 <plist version="1.0">
   <dict>
     <key>CFBundleName</key>
-    <string>App</string>
+    <string>YAGL Retro Designer</string>
     <key>CFBundleIdentifier</key>
-    <string>com.example.App</string>
+    <string>com.yagl.retro.designer</string>
     <key>CFBundleShortVersionString</key>
-    <string>1.0</string>
+    <string>0.1</string>
     <key>LSMinimumSystemVersion</key>
     <string>10.9</string>
     <key>CFBundleDevelopmentRegion</key>
     <string>en</string>
     <key>NSHumanReadableCopyright</key>
-    <string></string>
+    <string>Copyright (c) Pavel Melnikov</string>
     <key>CFBundleIconFile</key>
     <string>MacIcon.icns</string>
   </dict>

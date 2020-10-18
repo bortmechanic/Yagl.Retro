@@ -16,13 +16,22 @@
     <PackageTags>YAGL</PackageTags>
     <Company>Pavel Melnikov</Company>
     <Product>YAGL Retro Designer</Product>
-    <AssemblyVersion>0.1.0-alpha</AssemblyVersion>
+    <AssemblyVersion>0.1.0</AssemblyVersion>
   </PropertyGroup>
 	
   <ItemGroup>
+    <PackageReference Include="Eto.Forms" Version="2.5.6" />
+    <PackageReference Include="Eto.OpenTK" Version="0.1.2" />
+    <PackageReference Include="Eto.OpenTK.Gtk2" Version="0.1.2" />
+    <PackageReference Include="Eto.OpenTK.Mac64" Version="0.1.2" />
+    <PackageReference Include="Eto.OpenTK.Wpf" Version="0.1.2" />
     <PackageReference Include="Eto.Platform.Wpf" Version="2.5.6" />
     <PackageReference Include="Eto.Platform.Gtk" Version="2.5.6" />
     <PackageReference Include="Eto.Platform.Mac64" Version="2.5.6" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <None Remove="App.csproj.DotSettings" />
   </ItemGroup>
 	
 </Project>
